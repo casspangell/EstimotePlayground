@@ -10,7 +10,7 @@
 #import "ESTBeacon.h"
 #import "MLDrawing.h"
 
-@interface MLColorsViewController : UIViewController {
+@interface MLColorsViewController : UIViewController <UIGestureRecognizerDelegate> {
     NSString* proximityString;
     MLDrawing *drawing;
     double mdiameter;

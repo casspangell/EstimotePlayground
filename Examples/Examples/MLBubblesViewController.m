@@ -182,6 +182,10 @@
 }
 
 - (void)tap:(UITapGestureRecognizer *)recognizer {
+    [self.view.subviews makeObjectsPerformSelector: @selector(removeFromSuperview)];
+}
+
+-(void)removeFromSuperview{
     [drawing removeFromSuperview];
 }
 

@@ -53,6 +53,7 @@
     UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc]
                                              initWithTarget:self action:@selector(tap:)];
     [self.view addGestureRecognizer:tapRecognizer];
+    tapRecognizer.delegate = self;
     
     /*
      * BeaconManager setup.
