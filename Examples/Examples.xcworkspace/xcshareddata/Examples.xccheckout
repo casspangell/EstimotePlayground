@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>BF35A6F0-3EC7-45AE-99AC-4688CDB987CF</string>
+	<string>4F7F0F6E-7F9B-4952-90E3-1DE946348218</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Examples</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>F1F00066-7A16-4070-AF7E-EB676EE018B7</key>
-		<string>https://github.com/Estimote/iOS-SDK.git</string>
+		<key>9E2C39FA-99A1-4C15-9F30-5C008976FAB5</key>
+		<string>ssh://github.com/casspangell/EstimotePlayground.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Examples/Examples.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>F1F00066-7A16-4070-AF7E-EB676EE018B7</key>
+		<key>9E2C39FA-99A1-4C15-9F30-5C008976FAB5</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/Estimote/iOS-SDK.git</string>
+	<string>ssh://github.com/casspangell/EstimotePlayground.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>F1F00066-7A16-4070-AF7E-EB676EE018B7</string>
+	<string>9E2C39FA-99A1-4C15-9F30-5C008976FAB5</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>F1F00066-7A16-4070-AF7E-EB676EE018B7</string>
+			<string>9E2C39FA-99A1-4C15-9F30-5C008976FAB5</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Estimote</string>
+			<string>EstimotePlayground</string>
 		</dict>
 	</array>
 </dict>

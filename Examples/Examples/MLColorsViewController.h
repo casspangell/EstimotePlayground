@@ -10,7 +10,7 @@
 #import "ESTBeacon.h"
 #import "MLDrawing.h"
 
-@interface MLBubblesViewController : UIViewController {
+@interface MLColorsViewController : UIViewController {
     NSString* proximityString;
     MLDrawing *drawing;
     double mdiameter;

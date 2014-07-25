@@ -20,6 +20,7 @@
 #import "MLIdleViewController.h"
 #import "MLSoCoolViewController.h"
 #import "MLBubblesViewController.h"
+#import "MLColorsViewController.h"
 
 
 @interface ESTDemoTableViewCell : UITableViewCell
@@ -60,7 +61,7 @@
                                                                   action:@selector(authorizeBtnTapped:)];
     self.navigationItem.rightBarButtonItem = authButton;
     
-    self.beaconDemoList = @[ @[@"Idle", @"You're So Cool", @"Bubbles"],
+    self.beaconDemoList = @[ @[@"Label/Alpha Distance", @"Alpha Proximity", @"Bubbles Distance", @"Colored Touch"],
                              @[@"Distance Demo", @"Proximity Demo",@"Notification Demo"],
                              @[@"Temperature Demo", @"Accelerometer Demo"],
                              @[@"Update Firmware Demo", @"My beacons in Cloud Demo"]];
@@ -149,6 +150,17 @@
                                                                      completion:^(ESTBeacon *beacon) {
                                                                          
                                                                          MLBubblesViewController *soCoolVC = [[MLBubblesViewController alloc] initWithBeacon:beacon];
+                                                                         [self.navigationController pushViewController:soCoolVC animated:YES];
+                                                                     }];
+                
+                break;
+            }
+            case 3:
+            {
+                demoViewController = [[ESTBeaconTableVC alloc] initWithScanType:ESTScanTypeBeacon
+                                                                     completion:^(ESTBeacon *beacon) {
+                                                                         
+                                                                         MLColorsViewController *soCoolVC = [[MLColorsViewController alloc] initWithBeacon:beacon];
                                                                          [self.navigationController pushViewController:soCoolVC animated:YES];
                                                                      }];
                 

@@ -15,6 +15,8 @@
 		8962ADC1198177F900F1211D /* MLDrawing.m in Sources */ = {isa = PBXBuildFile; fileRef = 8962ADC0198177F900F1211D /* MLDrawing.m */; };
 		8962ADC51982C4F300F1211D /* MLBubblesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8962ADC31982C4F300F1211D /* MLBubblesViewController.m */; };
 		8962ADC61982C4F300F1211D /* MLBubblesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8962ADC41982C4F300F1211D /* MLBubblesViewController.xib */; };
+		8962ADCA1982D11E00F1211D /* MLColorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8962ADC81982D11E00F1211D /* MLColorsViewController.m */; };
+		8962ADCB1982D11E00F1211D /* MLColorsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8962ADC91982D11E00F1211D /* MLColorsViewController.xib */; };
 		951C167918E45EA5001B3C8E /* ESTTemperatureDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 951C167818E45EA5001B3C8E /* ESTTemperatureDemoVC.xib */; };
 		951C167B18E45EB3001B3C8E /* ESTAccelerometerDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 951C167A18E45EB3001B3C8E /* ESTAccelerometerDemoVC.xib */; };
 		951C167D18E475B6001B3C8E /* ESTNotificationDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 951C167C18E475B6001B3C8E /* ESTNotificationDemoVC.xib */; };
@@ -68,6 +70,9 @@
 		8962ADC21982C4F300F1211D /* MLBubblesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLBubblesViewController.h; sourceTree = "<group>"; };
 		8962ADC31982C4F300F1211D /* MLBubblesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLBubblesViewController.m; sourceTree = "<group>"; };
 		8962ADC41982C4F300F1211D /* MLBubblesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MLBubblesViewController.xib; sourceTree = "<group>"; };
+		8962ADC71982D11E00F1211D /* MLColorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLColorsViewController.h; sourceTree = "<group>"; };
+		8962ADC81982D11E00F1211D /* MLColorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLColorsViewController.m; sourceTree = "<group>"; };
+		8962ADC91982D11E00F1211D /* MLColorsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MLColorsViewController.xib; sourceTree = "<group>"; };
 		951C167818E45EA5001B3C8E /* ESTTemperatureDemoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ESTTemperatureDemoVC.xib; sourceTree = "<group>"; };
 		951C167A18E45EB3001B3C8E /* ESTAccelerometerDemoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ESTAccelerometerDemoVC.xib; sourceTree = "<group>"; };
 		951C167C18E475B6001B3C8E /* ESTNotificationDemoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ESTNotificationDemoVC.xib; sourceTree = "<group>"; };
@@ -153,6 +158,9 @@
 				8962ADC21982C4F300F1211D /* MLBubblesViewController.h */,
 				8962ADC31982C4F300F1211D /* MLBubblesViewController.m */,
 				8962ADC41982C4F300F1211D /* MLBubblesViewController.xib */,
+				8962ADC71982D11E00F1211D /* MLColorsViewController.h */,
+				8962ADC81982D11E00F1211D /* MLColorsViewController.m */,
+				8962ADC91982D11E00F1211D /* MLColorsViewController.xib */,
 			);
 			name = "Mondo's Labs";
 			sourceTree = "<group>";
@@ -332,6 +340,7 @@
 				AC39C3D618D72A6F00B38212 /* Images.xcassets in Resources */,
 				8962ADBC197F0C5500F1211D /* MLSoCoolViewController.xib in Resources */,
 				8962ADB1197EFA7D00F1211D /* MLIdleViewController.xib in Resources */,
+				8962ADCB1982D11E00F1211D /* MLColorsViewController.xib in Resources */,
 				AC39C3C818D72A6F00B38212 /* InfoPlist.strings in Resources */,
 				951C167918E45EA5001B3C8E /* ESTTemperatureDemoVC.xib in Resources */,
 			);
@@ -355,6 +364,7 @@
 				A154DE5418E0373100734BD6 /* ESTTemperatureDemoVC.m in Sources */,
 				AC39C3D418D72A6F00B38212 /* ESTViewController.m in Sources */,
 				AC39C3FB18D7346C00B38212 /* ESTProximityDemoVC.m in Sources */,
+				8962ADCA1982D11E00F1211D /* MLColorsViewController.m in Sources */,
 				95A43D771940CDDB004D81E3 /* ESTCloudBeaconTableVC.m in Sources */,
 				AC39C3FE18D73DCB00B38212 /* ESTDistanceDemoVC.m in Sources */,
 				AC39C3F418D72BA700B38212 /* ESTBeaconTableVC.m in Sources */,

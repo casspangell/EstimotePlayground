@@ -1,17 +1,17 @@
 //
-//  MLSoCoolViewController.m
+//  MLColorsViewController
 //  Examples
 //
 //  Created by Cass Pangell on 7/22/14.
 //  Copyright (c) 2014 com.estimote. All rights reserved.
 //
 
-#import "MLBubblesViewController.h"
+#import "MLColorsViewController.h"
 #import "ESTBeaconManager.h"
 #import <AudioToolbox/AudioServices.h>
 #import "MLDrawing.h"
 
-@interface MLBubblesViewController () <ESTBeaconManagerDelegate>{
+@interface MLColorsViewController () <ESTBeaconManagerDelegate>{
     
 }
 
@@ -21,7 +21,7 @@
 
 @end
 
-@implementation MLBubblesViewController
+@implementation MLColorsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -76,7 +76,7 @@
         ESTBeacon *firstBeacon = [beacons firstObject];
         
         // [self textForProximity:firstBeacon.proximity];
-       // [self createSomethingCool:[self textForProximity:firstBeacon.proximity]];
+        // [self createSomethingCool:[self textForProximity:firstBeacon.proximity]];
         [self createSomethingBetter:firstBeacon.distance];
         
     }
@@ -110,11 +110,11 @@
         //[drawing removeFromSuperview];
     }];
     
-
+    
 }
 
 -(void)createSomethingBetter:(NSNumber*)distance{
-        NSLog(@"DISTANCE*100 %f", [distance doubleValue]*100);
+    NSLog(@"DISTANCE*100 %f", [distance doubleValue]*100);
     double dist = [distance doubleValue];
     [self setDiameter:70.0];
     lWidth = 10.0;
@@ -148,7 +148,7 @@
 
 - (NSString *)textForProximity:(CLProximity)proximity
 {
-
+    
     
     switch (proximity) {
         case CLProximityFar:
