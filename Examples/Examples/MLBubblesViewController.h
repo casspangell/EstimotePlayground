@@ -15,6 +15,8 @@
     MLDrawing *drawing;
     double mdiameter;
     double lWidth;
+    
+    NSMutableArray *colors;
 }
 
 @property (nonatomic, strong) IBOutlet UITapGestureRecognizer *tapRecognizer;

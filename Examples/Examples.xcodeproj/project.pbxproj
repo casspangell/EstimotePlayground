@@ -158,11 +158,19 @@
 				8962ADC21982C4F300F1211D /* MLBubblesViewController.h */,
 				8962ADC31982C4F300F1211D /* MLBubblesViewController.m */,
 				8962ADC41982C4F300F1211D /* MLBubblesViewController.xib */,
+				8962AE121988334600F1211D /* Rooms */,
+			);
+			name = "Mondo's Labs";
+			sourceTree = "<group>";
+		};
+		8962AE121988334600F1211D /* Rooms */ = {
+			isa = PBXGroup;
+			children = (
 				8962AE0D1986EB3D00F1211D /* MLRoomsViewController.h */,
 				8962AE0E1986EB3D00F1211D /* MLRoomsViewController.m */,
 				8962AE0F1986EB3D00F1211D /* MLRoomsViewController.xib */,
 			);
-			name = "Mondo's Labs";
+			name = Rooms;
 			sourceTree = "<group>";
 		};
 		AC39C3B118D72A6F00B38212 = {

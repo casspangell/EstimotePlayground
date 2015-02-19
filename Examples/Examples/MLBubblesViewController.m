@@ -12,7 +12,7 @@
 #import "MLDrawing.h"
 
 @interface MLBubblesViewController () <ESTBeaconManagerDelegate>{
-    
+     int count;
 }
 
 @property (nonatomic, strong) ESTBeacon         *beacon;
@@ -54,6 +54,18 @@
                                              initWithTarget:self action:@selector(tap:)];
     [self.view addGestureRecognizer:tapRecognizer];
     
+    colors = [NSMutableArray array];
+   
+
+    float INCREMENT = 0.025;
+    for (float hue = 0.0; hue < 1.0; hue += INCREMENT) {
+        UIColor *color = [UIColor colorWithHue:hue
+                                    saturation:1.0
+                                    brightness:1.0
+                                         alpha:1.0];
+        [colors addObject:color];
+    }
+    
     /*
      * BeaconManager setup.
      */
@@ -83,7 +95,7 @@
 }
 
 -(void)createSomethingCool:(NSString*)proximity {
-    double duration;
+ /*   double duration;
     
     if ([proximity isEqualToString:@"Far"]) {
         lWidth = 3.0;
@@ -110,7 +122,7 @@
         //[drawing removeFromSuperview];
     }];
     
-
+*/
 }
 
 -(void)createSomethingBetter:(NSNumber*)distance{
@@ -119,21 +131,35 @@
     [self setDiameter:70.0];
     lWidth = 10.0;
     
-    drawing = [[MLDrawing alloc] initWithFrame:CGRectMake((self.view.frame.size.width/2)-(mdiameter/2), (self.view.frame.size.height/2)-(mdiameter/2), mdiameter, mdiameter) andDiameter:mdiameter andLineWidth:lWidth];
+    count ++;
+    NSLog(@"count %d", count);
     
+    if (count > [colors count]-1) {
+        count = 0;
+    }
+    
+    UIColor *color = [colors objectAtIndex:count];
+    
+    
+            drawing = [[MLDrawing alloc] initWithFrame:CGRectMake((self.view.frame.size.width/2)-(mdiameter/2), (self.view.frame.size.height/2)-(mdiameter/2), mdiameter, mdiameter) andDiameter:mdiameter andLineWidth:lWidth andColor:color];
+
     [self.view addSubview:drawing];
     
-    drawing.alpha = 1;
-    [UIView animateWithDuration:dist*70 animations:^(void) {
-        //drawing.alpha = 0;
-        drawing.transform = CGAffineTransformMakeScale(5, 5);
-    } completion:^(BOOL finished){
-        //[drawing removeFromSuperview];
+    drawing.alpha = 0;
+    [UIView animateWithDuration:5 animations:^(void) {
+       drawing.alpha = 1;
     }];
     
-    [UIView animateWithDuration:dist*50.0 animations:^(void) {
+    [UIView animateWithDuration:dist*70 animations:^(void) {
+        drawing.transform = CGAffineTransformMakeScale(4.5, 4.5);
+
+    }];
+
+    [UIView animateWithDuration:dist*70.0 animations:^(void) {
         drawing.alpha = 0;
     }];
+
+
 }
 
 -(void)setDiameter:(double)dmeter{

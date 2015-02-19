@@ -64,7 +64,7 @@
         
         if (!error)
         {
-            self.temperatureLabel.text = [NSString stringWithFormat:@"%.1f°C", [value floatValue]];
+            self.temperatureLabel.text = [NSString stringWithFormat:@"%.1f°F", [value floatValue]*33.8];
             [self.activityIndicator stopAnimating];
         }
         else

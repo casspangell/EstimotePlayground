@@ -7,6 +7,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MLRoomsViewController">
             <connections>
                 <outlet property="beaconTable" destination="WvM-OT-PYC" id="uYB-Vz-3si"/>
+                <outlet property="selectLabel" destination="8qM-s9-jkj" id="mti-QT-f8h"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

@@ -61,7 +61,7 @@
                                                                   action:@selector(authorizeBtnTapped:)];
     self.navigationItem.rightBarButtonItem = authButton;
     
-    self.beaconDemoList = @[ @[@"Label/Alpha Distance", @"Alpha Proximity", @"Bubbles Distance", @"Rooms"],
+    self.beaconDemoList = @[ @[@"Label/Alpha Distance", @"Alpha Proximity", @"Bubbles Distance"],
                              @[@"Distance Demo", @"Proximity Demo",@"Notification Demo"],
                              @[@"Temperature Demo", @"Accelerometer Demo"],
                              @[@"Update Firmware Demo", @"My beacons in Cloud Demo"]];

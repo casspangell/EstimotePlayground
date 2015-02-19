@@ -52,7 +52,7 @@
     
     self.beaconTable.delegate = self;
     self.beaconTable.dataSource = self;
-    
+
     /*
      * BeaconManager setup.
      */
@@ -66,10 +66,16 @@
     [self.beaconManager startRangingBeaconsInRegion:self.beaconRegion];
 }
 
+-(void) fade{
+    [UIView animateWithDuration:1 animations:^(void) {
+        [_selectLabel setAlpha:.3];
+        [_beaconTable setAlpha:.3];
+    }];
+}
+
 - (NSString *)textForProximity:(CLProximity)proximity
 {
-    
-    
+
     switch (proximity) {
         case CLProximityFar:
 
@@ -104,7 +110,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSLog(@"count %d",[_beaconsArray count]);
+    //NSLog(@"count %d",[_beaconsArray count]);
     return [_beaconsArray count];
 }
 
@@ -144,6 +150,8 @@
 {
     ESTBeacon *selectedBeacon = [_beaconsArray objectAtIndex:indexPath.row];
     NSLog(@"%@", selectedBeacon);
+    [self fade];
+    
     // self.completion(selectedBeacon);
 }
 
@@ -153,12 +161,9 @@
 {
     if (beacons.count > 0)
     {
-        //ESTBeacon *firstBeacon = [beacons firstObject];
         _beaconsArray = beacons;
         NSLog(@"array: %@", _beaconsArray);
         [_beaconTable reloadData];
-        
-        //NSLog(@"%@", [self textForProximity:firstBeacon.proximity]);
         
     }
 }

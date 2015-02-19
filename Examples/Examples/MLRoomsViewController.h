@@ -14,6 +14,7 @@
 
 @property (nonatomic) IBOutlet UITableView *beaconTable;
 @property (nonatomic, strong) NSArray *beaconsArray;
+@property (nonatomic) IBOutlet UILabel *selectLabel;
 
 - (id)initWithBeacon:(ESTBeacon *)beacon;
 @end

@@ -10,29 +10,29 @@
 	<string>Examples</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>9E2C39FA-99A1-4C15-9F30-5C008976FAB5</key>
+		<key>1D43257DEE88A065B784C1C054F8B49E8C809705</key>
 		<string>ssh://github.com/casspangell/EstimotePlayground.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Examples/Examples.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>9E2C39FA-99A1-4C15-9F30-5C008976FAB5</key>
+		<key>1D43257DEE88A065B784C1C054F8B49E8C809705</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>ssh://github.com/casspangell/EstimotePlayground.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>9E2C39FA-99A1-4C15-9F30-5C008976FAB5</string>
+	<string>1D43257DEE88A065B784C1C054F8B49E8C809705</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>9E2C39FA-99A1-4C15-9F30-5C008976FAB5</string>
+			<string>1D43257DEE88A065B784C1C054F8B49E8C809705</string>
 			<key>IDESourceControlWCCName</key>
 			<string>EstimotePlayground</string>
 		</dict>

@@ -78,7 +78,7 @@
 }
 
 -(void)createSomethingCool:(NSString*)proximity {
-    double duration;
+  /*  double duration;
     
     if ([proximity isEqualToString:@"Far"]) {
         lWidth = 3.0;
@@ -105,7 +105,7 @@
         //[drawing removeFromSuperview];
     }];
     
-    
+    */
 }
 
 -(void)setDiameter:(double)dmeter{
